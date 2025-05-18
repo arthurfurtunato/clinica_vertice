@@ -8,7 +8,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: #111;
+  background: #2563eb;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 1000;
 }
@@ -22,7 +22,7 @@ nav {
 }
 
 .logo {
-  color: #2563eb;
+  color: #fff;
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -49,12 +49,12 @@ nav {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #2563eb;
+  background: #111;
   transition: width 0.3s;
 }
 
 .nav-link:hover {
-  color: #2563eb;
+  color: #111;
 }
 
 .nav-link:hover::after {
@@ -111,4 +111,127 @@ nav {
 /* Espaço para o conteúdo não ficar atrás da navbar */
 .content {
   padding-top: 72px;
+}
+.main-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ajuste conforme desejar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main-image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  z-index: 1;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2; /* deixa a imagem translúcida */
+  display: block;
+}
+
+.main-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3); /* overlay escuro opcional */
+  z-index: 2;
+}
+
+.main-text {
+  position: relative;
+  z-index: 3;
+  color: #2563eb;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.main-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.main-text p {
+  font-size: 1.9rem;
+  color: #e5e7eb;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.services-section {
+  padding: 50px 0;
+  background: #111;
+  color: #e5e7eb;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 24px;
+}
+
+@media (max-width: 900px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.service-card p {
+  text-align: justify;
+  font-size: 1rem;
+  color: #666;
+}
+
+.service-card ul li {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 5px 0;
+  color: #666;
 }
