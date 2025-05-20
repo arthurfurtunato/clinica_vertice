@@ -20,15 +20,17 @@
                 <span></span>
             </div>
             <div class="nav-links">
-                <a href="#" class="nav-link">Início</a>
-                <a href="#" class="nav-link">Sobre</a>
-                <a href="#" class="nav-link">Profissionais</a>
-                <a href="#" class="nav-link">Contato</a>
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#profissionais" class="nav-link">Profissionais</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#espaco" class="nav-link">Espaço</a>
+                <a href="#contato" class="nav-link">Contato</a>
             </div>
         </div>
     </nav>
     <main>
-        <section class="main-section">
+        <section class="main-section" id="home">
             <div class="main-image-container">
                 <img class="main-image" src="assets/img/clinica_principal_exemplo.jpg" alt="Clínica Vértice">
                 <div class="main-overlay"></div>
@@ -38,7 +40,7 @@
                 <p>Referência em Fisioterapia.</p>
             </div>
         </section>
-        <section class="services-section">
+        <section class="services-section" id="servicos">
             <h2>Nossos serviços</h2>
             <div class="services-container">
                 <div class="service-card">
@@ -64,10 +66,47 @@
                 </div>
                 <div class="service-card">
                     <h3>Fisioterapia Esportiva</h3>
-                    <p>Nossos profissionais estão preparados para atender atletas de alto rendimento e praticantes de atividades físicas.</p>
+                    <p>Reabilitamos, previnimos lesões e otimizamos.</p>
                 </div>
             </div>
+        </section>
+        <section class="profissionais-section" id="profissionais">
+            <h2>Nossos Profissionais</h2>
+            <div class="profissionais">
+                <div class="profissional">
+                    <img src="assets/img/fisioterapeuta_foto.jpeg" alt="Dr. Pedro Castro">
+                    <div class="descricao">
+                        <h3>Dr. Pedro Castro</h3>
+                        <p>Com mais de 12 anos de experiência na área de fisioterapia, Dr. Pedro Castro é formado pela Universidade Federal de Pernambuco e possui mestrado em Reabilitação Neuromuscular pela USP. Ao longo de sua carreira, especializou-se em fisioterapia ortopédica e esportiva, atuando tanto em clínicas quanto em hospitais de referência. Pedro é reconhecido por sua abordagem humanizada e pelo desenvolvimento de protocolos personalizados para reabilitação de lesões musculoesqueléticas, sempre priorizando a qualidade de vida e a autonomia dos pacientes. Participa ativamente de congressos nacionais e internacionais, além de ministrar cursos e palestras sobre prevenção de lesões e promoção da saúde física. Sua dedicação e constante atualização fazem dele uma referência no tratamento de atletas amadores e profissionais.</p>
+                    </div>
+                </div>
+                <div class="profissional invertido">
+                    <img src="assets/img/fisioterapeuta_foto.jpeg" alt="Dr. Yves Oliveira">
+                    <div class="descricao">
+                        <h3>Dr. Yves Oliveira</h3>
+                        <p>Graduado em Fisioterapia pela Universidade Católica de Brasília, Dr. Yves Oliveira possui pós-graduação em Fisioterapia Respiratória e Terapia Intensiva. Com mais de uma década de atuação, trabalhou em grandes centros hospitalares, onde se destacou no atendimento a pacientes em reabilitação pós-cirúrgica e portadores de doenças respiratórias crônicas. Yves é conhecido por sua habilidade em integrar técnicas modernas de fisioterapia respiratória com métodos tradicionais, proporcionando resultados expressivos na recuperação funcional dos pacientes. Além da prática clínica, dedica-se à pesquisa científica e à publicação de artigos em revistas especializadas, contribuindo para o avanço da fisioterapia no Brasil. Seu compromisso com a excelência e o bem-estar dos pacientes é reconhecido por colegas e pacientes.</p>
+                    </div>
+                </div>
+                <div class="profissional">
+                    <img src="assets/img/fisioterapeuta_foto.jpeg" alt="Dra. Luisa">
+                    <div class="descricao">
+                        <h3>Dra. Luísa Braga</h3>
+                        <p>Especialista em fisioterapia pediátrica, Dra. Luísa Braga é formada pela Universidade Estadual de Campinas e possui ampla experiência no acompanhamento de crianças com necessidades especiais. Ao longo de sua trajetória, atuou em instituições renomadas, desenvolvendo programas de intervenção precoce para bebês prematuros e crianças com distúrbios do desenvolvimento motor. Luísa é apaixonada pelo que faz e acredita no poder transformador da fisioterapia para promover autonomia e inclusão. Participa de projetos sociais voltados à orientação de famílias e capacitação de profissionais da saúde, além de ser autora de capítulos em livros sobre fisioterapia infantil. Sua sensibilidade, aliada ao conhecimento técnico, faz dela uma profissional admirada por pais, colegas e pacientes.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contato">
+            <h2>Entre em contato</h2>
+            <p>Estamos aqui para ajudar você a alcançar seus objetivos de saúde e bem-estar. Entre em contato conosco para agendar uma consulta ou obter mais informações sobre nossos serviços.</p>
+            <form class="contact-form" method="post">
+                <input type="text" name="name" id="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" id="email" placeholder="Seu email" required>
+                <textarea name="message" id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <script src="assets/navbar.js"></script>
+    <script src="assets/whatsapp.js"></script>
 </body>
 </html>
