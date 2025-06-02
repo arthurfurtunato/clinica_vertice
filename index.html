@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon_vertice_max.png" type="image/png">
 </head>
 <body>
     <nav>
         <div class="navbar-container">
-            <span class="logo">LOGO</span>
+            <a href="#home">
+                <img src="assets/img/icone_vertice.png" alt="Ícone Clínica Vértice" class="icone-vertice-img">
+            </a>
             <div class="menu-toggle" id="menu-toggle">
                 <span></span>
                 <span></span>
@@ -21,10 +24,10 @@
             </div>
             <div class="nav-links">
                 <a href="#home" class="nav-link">Início</a>
-                <!-- <a href="#sobre" class="nav-link">Sobre Nós</a> -->
-                <a href="#profissionais" class="nav-link">Profissionais</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#espaco" class="nav-link">Espaço</a>
                 <a href="#servicos" class="nav-link">Serviços</a>
-                <!-- <a href="#espaco" class="nav-link">Espaço</a> -->
+                <a href="#profissionais" class="nav-link">Profissionais</a>
                 <a href="#contato" class="nav-link">Contato</a>
             </div>
         </div>
@@ -32,14 +35,43 @@
     <main>
         <section class="main-section" id="home">
             <div class="main-image-container">
-                <img class="main-image" src="assets/img/clinica_principal_exemplo.jpg" alt="Clínica Vértice">
-                <div class="main-overlay"></div>
-            </div>
-            <div class="main-text">
-                <h1>Clínica Vértice</h1>
-                <p>Referência em Fisioterapia.</p>
+                <img class="main-image" src="assets/img/imagem-principal-1.svg" alt="Clínica Vértice">
             </div>
         </section>
+        <section class="about-section" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Na Clínica Vértice, nossa missão é proporcionar um atendimento de excelência em fisioterapia, focando na recuperação e bem-estar dos nossos pacientes. Com uma equipe de profissionais altamente qualificados e uma abordagem centrada no paciente, oferecemos tratamentos personalizados que visam não apenas a cura, mas também a prevenção de lesões e a promoção da saúde.</p>
+            <p>Nosso espaço foi projetado para oferecer conforto e tranquilidade, com equipamentos modernos e tecnologia de ponta para garantir os melhores resultados. Estamos comprometidos com a educação contínua e a atualização constante, sempre buscando as melhores práticas e inovações na área da fisioterapia.</p>
+            <p>Seja você um atleta profissional, um paciente em reabilitação ou alguém buscando melhorar sua qualidade de vida, estamos aqui para ajudar. Na Clínica Vértice, acreditamos que cada paciente é único e merece um tratamento individualizado, respeitando suas necessidades e objetivos.</p>
+            <p>Venha nos conhecer e descubra como podemos ajudar você a alcançar seus objetivos de saúde e bem-estar.</p>
+
+            <h3>Nossos diferenciais</h3>
+            <ul>
+                <li>Mais de 10 anos de experiência</li>
+                <li>Atendimento personalizado</li>
+                <li>Equipe multidisciplinar</li>
+                <li>Tratamentos baseados em evidências científicas</li>
+                <li>Ambiente acolhedor e moderno</li>
+        </section>
+        <section class="space-section" id="espaco">
+            <h2>Nosso Espaço</h2>
+            <p>Conheça nosso espaço projetado para proporcionar conforto e bem-estar durante o seu tratamento. Contamos com salas equipadas com tecnologia de ponta, áreas de espera aconchegantes e um ambiente acolhedor que favorece a recuperação.</p>
+            <div class="gallery">
+                <img class="space-image" src="assets/img/foto_clinica_1.jpg" alt="Sala de Fisioterapia">
+                <img class="space-image" src="assets/img/foto_clinica_2.jpg" alt="Equipamentos Modernos">
+                <img class="space-image" src="assets/img/foto_clinica_3.jpg" alt="Ambiente Aconchegante">
+                <!-- Adicione mais imagens se desejar -->
+            </div>
+            <p>Nosso espaço é projetado para atender às necessidades de todos os nossos pacientes, oferecendo um ambiente seguro e confortável. Cada detalhe foi pensado para garantir a melhor experiência possível durante o seu tratamento.</p>
+            <p>Venha nos visitar e conhecer de perto as instalações da Clínica Vértice. Estamos localizados no coração da cidade, com fácil acesso e estacionamento disponível.</p>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox" style="display:none;">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+                <div id="caption"></div>
+            </div>
+            </section>
         <section class="services-section" id="servicos">
             <h2>Nossos serviços</h2>
             <div class="services-container">
@@ -74,21 +106,21 @@
             <h2>Nossos Profissionais</h2>
             <div class="profissionais">
                 <div class="profissional">
-                    <img src="assets/img/fisioterapeuta_foto.jpeg" alt="Dr. Pedro Castro">
+                    <img src="assets/img/Foto_PHMC_VÉRTICE.jpg" alt="Dr. Pedro Castro" class="pedro-foto">
                     <div class="descricao">
                         <h3>Dr. Pedro Castro</h3>
                         <p>Com mais de 12 anos de experiência na área de fisioterapia, Dr. Pedro Castro é formado pela Universidade Federal de Pernambuco e possui mestrado em Reabilitação Neuromuscular pela USP. Ao longo de sua carreira, especializou-se em fisioterapia ortopédica e esportiva, atuando tanto em clínicas quanto em hospitais de referência. Pedro é reconhecido por sua abordagem humanizada e pelo desenvolvimento de protocolos personalizados para reabilitação de lesões musculoesqueléticas, sempre priorizando a qualidade de vida e a autonomia dos pacientes. Participa ativamente de congressos nacionais e internacionais, além de ministrar cursos e palestras sobre prevenção de lesões e promoção da saúde física. Sua dedicação e constante atualização fazem dele uma referência no tratamento de atletas amadores e profissionais.</p>
                     </div>
                 </div>
                 <div class="profissional invertido">
-                    <img src="assets/img/fisioterapeuta_foto.jpeg" alt="Dr. Yves Oliveira">
+                    <img src="assets/img/foto_YO_profissional.png" alt="Dr. Yves Oliveira">
                     <div class="descricao">
                         <h3>Dr. Yves Oliveira</h3>
                         <p>Graduado em Fisioterapia pela Universidade Católica de Brasília, Dr. Yves Oliveira possui pós-graduação em Fisioterapia Respiratória e Terapia Intensiva. Com mais de uma década de atuação, trabalhou em grandes centros hospitalares, onde se destacou no atendimento a pacientes em reabilitação pós-cirúrgica e portadores de doenças respiratórias crônicas. Yves é conhecido por sua habilidade em integrar técnicas modernas de fisioterapia respiratória com métodos tradicionais, proporcionando resultados expressivos na recuperação funcional dos pacientes. Além da prática clínica, dedica-se à pesquisa científica e à publicação de artigos em revistas especializadas, contribuindo para o avanço da fisioterapia no Brasil. Seu compromisso com a excelência e o bem-estar dos pacientes é reconhecido por colegas e pacientes.</p>
                     </div>
                 </div>
                 <div class="profissional">
-                    <img src="assets/img/fisioterapeuta_foto.jpeg" alt="Dra. Luisa">
+                    <img src="assets/img/foto_LB_profissional.png" alt="Dra. Luisa" class="luisa-foto">
                     <div class="descricao">
                         <h3>Dra. Luísa Braga</h3>
                         <p>Especialista em fisioterapia pediátrica, Dra. Luísa Braga é formada pela Universidade Estadual de Campinas e possui ampla experiência no acompanhamento de crianças com necessidades especiais. Ao longo de sua trajetória, atuou em instituições renomadas, desenvolvendo programas de intervenção precoce para bebês prematuros e crianças com distúrbios do desenvolvimento motor. Luísa é apaixonada pelo que faz e acredita no poder transformador da fisioterapia para promover autonomia e inclusão. Participa de projetos sociais voltados à orientação de famílias e capacitação de profissionais da saúde, além de ser autora de capítulos em livros sobre fisioterapia infantil. Sua sensibilidade, aliada ao conhecimento técnico, faz dela uma profissional admirada por pais, colegas e pacientes.</p>
@@ -106,7 +138,39 @@
             </form>
         </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+            <h4>Redes Sociais & Contato</h4>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <img src="assets/img/instagram-icon.png" alt="Instagram" class="social-icon">
+                    Instagram
+                </a>
+                <a href="#" class="social-link">
+                    <img src="assets/img/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
+                    WhatsApp
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Telefone: (00) 0000-0000</p>
+                <p>Email: contato@clinicavertice.com</p>
+            </div>
+            </div>
+            <div class="footer-right">
+                <h4>Sobre a Clínica</h4>
+                <p>Clínica Vértice oferece atendimento especializado em fisioterapia, com equipe qualificada e estrutura moderna para seu bem-estar.</p>
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Voltar ao topo</button>
+            </div>
+            <div class="footer-bottom">
+                <p>Clínica Vértice - Rua Exemplo, 123 - Bairro Exemplo - Cidade/UF</p>
+                <p>Horário de funcionamento: Segunda a Sexta, das 8h às 18h</p>
+                <p class="copyright">&copy; 2025 Clínica Vértice. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
     <script src="assets/navbar.js"></script>
     <script src="assets/whatsapp.js"></script>
+    <script src="assets/light-box.js"></script>
 </body>
 </html>
