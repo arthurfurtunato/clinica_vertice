@@ -520,9 +520,9 @@ section {
 
 .contact-section {
   padding: 50px 0;
-  background: #111;
-  color: #fff;
-  height: 100vh;
+  background: #fff;
+  color: #000E40;
+  height: auto;
 }
 
 .contact-section h2 {
@@ -537,7 +537,7 @@ section {
   font-size: 1.2rem;
   margin-bottom: 20px;
   padding: 0 20px;
-  color: #dcbe96;
+  color: #666;
 }
 
 .contact-form {
@@ -1062,4 +1062,88 @@ section {
   .resource-section .info-section {
     grid-template-columns: 1fr;
   }
+}
+
+.client-assessment-section {
+  padding: 50px 0px 0px 0px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.client-assessment-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Parkinsans', sans-serif;
+}
+
+.client-assessment-section p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #dcbe96;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 0px auto;
+}
+
+.client-assessment-container {
+  width: 70%;
+  max-width: 800px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.client-assessment-container img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background: #f8f8f8;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0 18px;
+  transition: color 0.2s;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.prev:hover, .next:hover {
+  color: #007bff;
+  opacity: 1;
 }
