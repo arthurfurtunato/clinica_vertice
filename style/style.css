@@ -914,12 +914,13 @@ section {
     justify-content: center;
   }
 }
+
 .info-section {
   display: flex;
   justify-content: space-between;
   gap: 24px;
   margin: 32px 0 0 0;
-  padding: 0 5vw;
+  padding: 0 4vw;
 }
 
 .info-card {
@@ -1004,8 +1005,20 @@ section {
 .resource-section .info-section {
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
-  gap: 16px;
+  gap: 8px;
   padding: 0 24px;
+}
+
+.resource-section .info-section .info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  background: #f5f5f5; /* cinza bem leve */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .resource-section .info-card img {
