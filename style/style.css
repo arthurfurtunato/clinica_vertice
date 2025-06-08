@@ -465,6 +465,12 @@ section {
   font-family: 'Parkinsans', sans-serif;
 }
 
+.numbers-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #dcbe96;
+}
+
 @media (max-width: 900px) {
   .services-container {
     grid-template-columns: repeat(2, 1fr);
@@ -656,6 +662,10 @@ section {
   color: #e5e7eb;
 }
 
+.profissional:hover .descricao ul li {
+  color: #e5e7eb;
+}
+
 .profissional:hover img {
   transform: scale(1.08);
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
@@ -704,6 +714,11 @@ section {
   text-align: justify;
 }
 
+.profissional .descricao ul li {
+  font-size: 1.1rem;
+  color: #666;
+}
+
 .profissional.invertido {
   flex-direction: row-reverse;
 }
@@ -738,24 +753,29 @@ section {
   .profissionais-section {
     padding: 32px 0;
   }
+
   .profissionais {
     max-width: 100%;
     padding: 0 8px;
   }
+
   .profissional, .profissional.invertido {
     flex-direction: column;
     text-align: center;
     padding: 12px 4px;
     margin-bottom: 28px;
   }
+
   .profissional img, .profissional .luisa-foto, .profissional .pedro-foto {
     margin: 0 0 12px 0;
     width: 100px;
     height: 100px;
   }
+
   .profissional .descricao h3 {
     font-size: 1.1rem;
   }
+
   .profissional .descricao p {
     font-size: 0.98rem;
     text-align: left;
@@ -961,3 +981,68 @@ section {
   font-family: inherit; /* mantém a fonte do texto */
 }
 
+.resource-section {
+  padding: 10px 0px 50px 0px;
+  background: #111;
+  color: #fff;
+}
+
+.resource-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Parkinsans', sans-serif;
+}
+
+.resource-section p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #dcbe96;
+}
+
+.resource-section .info-section {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 0 24px;
+}
+
+.resource-section .info-card img {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  color: #000E40;
+}
+
+.resource-section .info-card p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.resource-section .info-card:hover p {
+  color: #2563eb;
+}
+
+.resource-section .info-card:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .resource-section .info-section {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .resource-section .info-section {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .resource-section .info-section {
+    grid-template-columns: 1fr;
+  }
+}
